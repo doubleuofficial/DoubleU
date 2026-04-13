@@ -1,0 +1,18 @@
+# doubleuofficial.online Robots File
+# ----------------------------------
+User-agent: *
+Allow: /
+Allow: /assets/css/
+Allow: /assets/js/
+
+# Security & Redundancy
+Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /api/v1/
+
+# Specific bot instructions
+User-agent: GPTBot
+Disallow: /private/
+
+# Sitemap - Keeps the "Double" indexed correctly
+Sitemap: https://doubleuofficial.online/sitemap.xml
