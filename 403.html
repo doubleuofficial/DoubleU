@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>403 - doubleU</title>
+    <style>
+        :root {
+            --primary: #000;
+            --warning: #d93025; /* A subtle red for 'access denied' */
+            --bg: #fff;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .logo {
+            font-weight: 900;
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            opacity: 0.5;
+        }
+
+        h1 {
+            font-size: 8rem;
+            margin: 0;
+            font-weight: 900;
+            letter-spacing: -5px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background: var(--warning);
+            color: #fff;
+            padding: 4px 12px;
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            border-radius: 20px;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
