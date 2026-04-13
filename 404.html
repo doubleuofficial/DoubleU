@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - doubleU</title>
+    <style>
+        :root {
+            --primary: #000;
+            --accent: #555;
+            --bg: #fff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .logo {
+            font-weight: 900;
+            font-size: 2rem;
+            letter-spacing: -2px;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 8rem;
+            margin: 0;
+            line-height: 1;
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin: 1rem 0 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--primary);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: transform 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Subtle "Double" effect */
+        .double-w {
+            position: relative;
+            display: inline-block;
+        }
+
+        .double-w::after {
+            content: '404';
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            z-index: -1;
+            color: #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">doubleU</div>
+        
+        <div class="double-w">
+            <h1>404</h1>
+        </div>
+
+        <p>Looks like you’ve hit a <strong>double</strong> dead end. <br> This page doesn't exist (yet).</p>
+        
+        <a href="/" class="btn">Return Home</a>
+    </div>
+
+</body>
+</html>
